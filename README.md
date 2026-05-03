@@ -59,9 +59,9 @@ netflix-controller/
 ⚙️ Como Instalar (Modo Desenvolvedor)
 Clone o projeto:
 
-Bash
+```bash
 git clone [https://github.com/Thiago361/Control-Netflix-.git](https://github.com/Thiago361/Control-Netflix-.git)
-
+```
 Acesse as extensões: No Chrome, vá para chrome://extensions/.
 
 Developer Mode: Ative a chave Modo do desenvolvedor no canto superior direito.
