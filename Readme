@@ -1,0 +1,92 @@
+# Netflix Controller - Extensão Educacional
+
+Uma extensão simples para Chrome que demonstra manipulação de DOM e execução de scripts em páginas web usando a **Chrome Extensions API**.
+
+> **Projeto com fins educacionais** 
+
+---
+
+## 🎯 Objetivo do Projeto
+
+Este projeto foi criado para estudar e demonstrar conceitos de desenvolvimento de extensões para navegadores, incluindo:
+
+- Comunicação entre **Popup** e **Content Scripts**
+- Injeção de scripts via `chrome.scripting.executeScript`
+- Manipulação direta do DOM de páginas web
+- Controle de elementos multimídia (`<video>`)
+
+---
+
+## ✨ Funcionalidades
+
+- Remover modal de restrição da Netflix ("Seu aparelho não faz parte da residência...")
+- Play/Pause do vídeo
+- Ativar/Desativar som (Mute)
+- Aumentar e diminuir volume
+- Ativar modo tela cheia (Fullscreen)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML, CSS e JavaScript
+- Chrome Extensions Manifest V3
+- `chrome.tabs` API
+- `chrome.scripting` API
+
+---
+
+## ⚠️ Aviso Importante
+
+**Este projeto é para fins educacionais apenas.**
+
+- O uso desta extensão na Netflix pode violar os [Termos de Serviço](https://help.netflix.com/legal/termsofuse) da plataforma.
+- Não é recomendada para uso em produção ou contas reais.
+- O autor não se responsabiliza por eventuais bloqueios de conta ou problemas decorrentes do uso da extensão.
+
+---
+
+## 📸 Como Usar (Educacional)
+
+1. Clone o repositório
+2. Abra o Chrome e acesse `chrome://extensions/`
+3. Ative o **Modo do desenvolvedor**
+4. Clique em "Carregar sem compactação" e selecione a pasta do projeto
+5. Acesse a Netflix e clique no ícone da extensão
+
+---
+
+## 📁 Estrutura do Projeto
+
+netflix-controller/
+├── manifest.json
+│ 
+│── index.html
+│── script.js
+│── index.css
+│
+└── README.md
+
+---
+
+## 📌 Aprendizados
+
+Ao estudar este projeto você vai aprender:
+
+- Como funciona o ciclo de vida de uma extensão Manifest V3
+- Comunicação entre diferentes contextos (Popup ↔ Content Script)
+- Como injetar e executar código em páginas específicas
+- Boas práticas de seleção de elementos DOM
+- Controle programático de players de vídeo
+
+---
+
+## ⚖️ Licença
+
+Este projeto está licenciado sob a **MIT License** — sinta-se à vontade para estudar, modificar e utilizar para aprendizado.
+
+---
+
+**Feito com objetivo puramente educacional.**
+
+Qualquer dúvida ou sugestão de melhoria no código é bem-vinda!

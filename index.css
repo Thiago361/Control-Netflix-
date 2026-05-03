@@ -1,0 +1,188 @@
+:root {
+  --netflix-red: #e50914;
+  --netflix-red-hover: #f40612;
+  --bg-dark: #141414;
+  --bg-panel: rgba(109, 109, 110, 0.4);
+  --bg-panel-hover: rgba(109, 109, 110, 0.7);
+  --text-main: #ffffff;
+  --text-muted: #b3b3b3;
+  --radius: 6px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* =========================================
+   RESET BÁSICO E TIPOGRAFIA
+========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 280px;
+  padding: 20px;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* =========================================
+   TÍTULO
+========================================= */
+.title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--netflix-red);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================
+   ESTILO GLOBAL DOS BOTÕES
+========================================= */
+button {
+  appearance: none;
+  border: none;
+  border-radius: var(--radius);
+  padding: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+  background-color: var(--bg-panel);
+  cursor: pointer;
+  transition: background-color var(--transition), transform 0.1s ease, box-shadow var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+button:hover {
+  background-color: var(--bg-panel-hover);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--text-main);
+  outline-offset: 2px;
+}
+
+/* =========================================
+   BOTÕES PRINCIPAIS
+========================================= */
+.selecionar-video {
+  background-color: var(--netflix-red);
+  font-size: 0.95rem;
+  padding: 14px;
+  position: relative;
+}
+
+.selecionar-video:hover {
+  background-color: var(--netflix-red-hover);
+}
+
+.selecionar-video::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 5%;
+  width: 90%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.retirar-modal {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--text-muted);
+}
+
+.retirar-modal:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  border-color: var(--text-main);
+}
+
+/* =========================================
+   CONTAINERS DE CONTROLE (Uso de CSS Grid)
+========================================= */
+.controls-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.volume-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.controls-buttons button,
+.volume-buttons button {
+  padding: 10px 4px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.pause-continuar {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.pause-continuar:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* =========================================
+   ESTILO DOS ÍCONES (SVGs)
+========================================= */
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.controls-buttons button {
+  padding: 12px 0;
+}
+
+.volume-buttons button {
+  flex-direction: row;
+  padding: 10px;
+  font-size: 0.75rem;
+}
+
+.volume-buttons span {
+  white-space: nowrap;
+}
+
+button[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: -30px;
+  background: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  color: white;
+}

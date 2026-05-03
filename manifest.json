@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Controle Netflix",
+  "version": "1.0",
+  "description": "Controla o player de vídeo da Netflix",
+
+   "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+     "notifications"
+  ],
+  "host_permissions": ["https://www.netflix.com/*"],
+
+  "action": {
+    "default_popup": "index.html"
+  }
+}
