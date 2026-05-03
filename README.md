@@ -12,7 +12,6 @@ Uma extensão leve e didática projetada para explorar o poder da **Chrome Exten
 
 > [!IMPORTANT]
 > **Fins Educacionais:** Este repositório foi criado exclusivamente para estudo de injeção de scripts e manipulação de DOM.
-
 ---
 
 ## 🚀 O que este projeto demonstra?
