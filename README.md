@@ -52,6 +52,7 @@ netflix-controller/
 ├── index.css       # Estilização moderna da UI
 ├── script.js       # Lógica de controle e comunicação de mensagens
 └── README.md       # Documentação do projeto
+```
 
 ---
 
