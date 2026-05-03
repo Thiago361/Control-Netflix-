@@ -52,3 +52,43 @@ netflix-controller/
 ├── index.css       # Estilização moderna da UI
 ├── script.js       # Lógica de controle e comunicação de mensagens
 └── README.md       # Documentação do projeto
+
+---
+
+⚙️ Como Instalar (Modo Desenvolvedor)
+Clone o projeto:
+
+Bash
+git clone [https://github.com/Thiago361/Control-Netflix-.git](https://github.com/Thiago361/Control-Netflix-.git)
+
+Acesse as extensões: No Chrome, vá para chrome://extensions/.
+
+Developer Mode: Ative a chave Modo do desenvolvedor no canto superior direito.
+
+Carregue o projeto: Clique em Carregar sem compactação e selecione a pasta raiz do repositório.
+
+Teste: Abra a Netflix e utilize o ícone da extensão na sua barra de ferramentas.
+
+---
+
+⚠️ Disclaimer & Segurança
+Este software é um Proof of Concept (PoC). O uso de extensões para modificar o comportamento de sites de terceiros pode violar os Termos de Serviço da plataforma.
+
+Não utilize em contas principais.
+
+O autor não se responsabiliza por sanções aplicadas pela plataforma.
+
+O foco aqui é o aprendizado de código, não a pirataria ou evasão sistemática de recursos.
+
+---
+
+🤝 Contribuições
+Adoraria ver como você pode melhorar este controle! Sinta-se à vontade para:
+
+Abrir Issues para reportar bugs.
+
+Enviar Pull Requests com novas funcionalidades (ex: controle de legendas, ajuste de velocidade).
+
+---
+
+Desenvolvido com ☕ e foco em aprendizado.
