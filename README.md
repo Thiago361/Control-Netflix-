@@ -87,14 +87,13 @@ Se você não possui o Git instalado, pode baixar a extensão pronta para uso:
  Teste: Abra a Netflix e utilize o ícone da extensão na sua barra de ferramentas.    
 ---
 
-⚠️ Disclaimer & Segurança
-Este software é um Proof of Concept (PoC). O uso de extensões para modificar o comportamento de sites de terceiros pode violar os Termos de Serviço da plataforma.
+⚠️ Disclaimer
 
-Não utilize em contas principais.
+Esta extensão foi desenvolvida com fins educacionais e de diagnóstico técnico. 
 
-O autor não se responsabiliza por sanções aplicadas pela plataforma.
+Ela é recomendada apenas para usuários que enfrentam problemas legítimos de identificação de rede, como situações em que o sistema da Netflix indica incorretamente que o dispositivo não pertence à residência da conta, mesmo estando conectado à rede Wi-Fi correta.
 
-O foco aqui é o aprendizado de código, não a pirataria ou evasão sistemática de recursos.
+O autor não se responsabiliza por qualquer violação dos Termos de Serviço da Netflix ou de outras plataformas, nem por eventuais consequências decorrentes do uso desta ferramenta.
 
 ---
 
