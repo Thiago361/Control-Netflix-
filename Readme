@@ -1,92 +1,94 @@
-# Netflix Controller - Extensão Educacional
+---
 
-Uma extensão simples para Chrome que demonstra manipulação de DOM e execução de scripts em páginas web usando a **Chrome Extensions API**.
+## ⚙️ Como Instalar (Modo Desenvolvedor)
 
-> **Projeto com fins educacionais** 
+1.  **Clone o projeto:**
+    ```bash
+    git clone [https://github.com/seu-usuario/netflix-controller.git](https://github.com/seu-usuario/netflix-controller.git)
+    ```
+2.  **Acesse as extensões:** No Chrome, vá para `chrome://extensions/`.
+3.  **Developer Mode:** Ative a chave **Modo do desenvolvedor** no canto superior direito.
+4.  **Carregue o projeto:** Clique em `Carregar sem compactação` e selecione a pasta raiz do repositório.
+5.  **Teste:** Abra a Netflix e utilize o ícone da extensão na sua barra de ferramentas.
 
 ---
 
-## 🎯 Objetivo do Projeto
+## ⚠️ Disclaimer & Segurança
 
-Este projeto foi criado para estudar e demonstrar conceitos de desenvolvimento de extensões para navegadores, incluindo:
-
-- Comunicação entre **Popup** e **Content Scripts**
-- Injeção de scripts via `chrome.scripting.executeScript`
-- Manipulação direta do DOM de páginas web
-- Controle de elementos multimídia (`<video>`)
+Este software é um **Proof of Concept (PoC)**. O uso de extensões para modificar o comportamento de sites de terceiros pode violar os Termos de Serviço da plataforma. 
+*   **Não utilize em contas principais.**
+*   **O autor não se responsabiliza por sanções aplicadas pela plataforma.**
+*   O foco aqui é o **aprendizado de código**, não a pirataria ou evasão sistemática de recursos.
 
 ---
 
-## ✨ Funcionalidades
+## 🤝 Contribuições
 
-- Remover modal de restrição da Netflix ("Seu aparelho não faz parte da residência...")
-- Play/Pause do vídeo
-- Ativar/Desativar som (Mute)
-- Aumentar e diminuir volume
-- Ativar modo tela cheia (Fullscreen)
+Adoraria ver como você pode melhorar este controle! Sinta-se à vontade para:
+1. Abrir **Issues** para reportar bugs.
+2. Enviar **Pull Requests** com novas funcionalidades (ex: controle de legendas, ajuste de velocidade).
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+### ⚖️ Licença
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
-- HTML, CSS e JavaScript
-- Chrome Extensions Manifest V3
-- `chrome.tabs` API
-- `chrome.scripting` API
+---
+**Desenvolvido com ☕ eCom certeza! Vamos transformar esse README em algo que transmita **profissionalismo** e **clareza técnica**, utilizando ícones, separadores visuais e uma estrutura que destaque suas habilidades como desenvolvedor.
+
+Aqui está uma versão refinada para o seu projeto:
 
 ---
 
-## ⚠️ Aviso Importante
+# 📺 Netflix Controller: Educational Extension
 
-**Este projeto é para fins educacionais apenas.**
+![Manifest V3](https://img.shields.io/badge/Manifest-V3-brightgreen)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
+![Chrome Extension](https://img.shields.io/badge/Platform-Chrome%20Extension-blue)
+![License](https://img.shields.io/badge/License-MIT-red)
 
-- O uso desta extensão na Netflix pode violar os [Termos de Serviço](https://help.netflix.com/legal/termsofuse) da plataforma.
-- Não é recomendada para uso em produção ou contas reais.
-- O autor não se responsabiliza por eventuais bloqueios de conta ou problemas decorrentes do uso da extensão.
+Uma extensão leve e didática projetada para explorar o poder da **Chrome Extensions API (Manifest V3)**. O projeto foca em demonstrar como interagir programaticamente com o DOM e elementos de mídia em aplicações web complexas.
 
----
-
-## 📸 Como Usar (Educacional)
-
-1. Clone o repositório
-2. Abra o Chrome e acesse `chrome://extensions/`
-3. Ative o **Modo do desenvolvedor**
-4. Clique em "Carregar sem compactação" e selecione a pasta do projeto
-5. Acesse a Netflix e clique no ícone da extensão
+> [!IMPORTANT]
+> **Fins Educacionais:** Este repositório foi criado exclusivamente para estudo de injeção de scripts e manipulação de DOM.
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🚀 O que este projeto demonstra?
 
+O objetivo principal não é apenas o controle da plataforma, mas a aplicação prática de conceitos de engenharia de software para navegadores:
+
+*   **Script Injection:** Uso da API `chrome.scripting` para executar código em contextos isolados.
+*   **Runtime Messaging:** Comunicação assíncrona entre o **Popup** (UI) e o **Content Script** (Contexto da página).
+*   **DOM Mastery:** Técnicas de seleção e remoção dinâmica de elementos (modais de restrição).
+*   **Media Interaction:** Controle programático da instância do player de vídeo HTML5.
+
+---
+
+## ✨ Funcionalidades Principais
+
+| Categoria | Descrição |
+| :--- | :--- |
+| 🛡️ **Bypass Didático** | Demonstração de remoção de overlays de restrição de residência. |
+| ⏯️ **Playback** | Controle de Play/Pause via interface externa. |
+| 🔊 **Áudio** | Ajuste de volume e função Mute/Unmute. |
+| 🖥️ **Display** | Alternância rápida para modo tela cheia (Fullscreen). |
+
+---
+
+## 🛠️ Stack Técnica
+
+*   **Core:** HTML5, CSS3 (Modern Flexbox) e JavaScript (Vanilla).
+*   **API:** Chrome Extensions Manifest V3.
+*   **Permissões:** `tabs`, `scripting` e filtros de `host_permissions`.
+
+---
+
+## 📂 Estrutura de Arquivos
+```bash
 netflix-controller/
-├── manifest.json
-│ 
-│── index.html
-│── script.js
-│── index.css
-│
-└── README.md
-
----
-
-## 📌 Aprendizados
-
-Ao estudar este projeto você vai aprender:
-
-- Como funciona o ciclo de vida de uma extensão Manifest V3
-- Comunicação entre diferentes contextos (Popup ↔ Content Script)
-- Como injetar e executar código em páginas específicas
-- Boas práticas de seleção de elementos DOM
-- Controle programático de players de vídeo
-
----
-
-## ⚖️ Licença
-
-Este projeto está licenciado sob a **MIT License** — sinta-se à vontade para estudar, modificar e utilizar para aprendizado.
-
----
-
-**Feito com objetivo puramente educacional.**
-
-Qualquer dúvida ou sugestão de melhoria no código é bem-vinda!
+├── manifest.json   # Cérebro da extensão e definições de permissões
+├── index.html      # Interface visual do Popup
+├── index.css       # Estilização moderna da UI
+├── script.js       # Lógica de controle e comunicação de mensagens
+└── README.md       # Documentação do projeto
