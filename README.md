@@ -6,7 +6,6 @@
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-brightgreen)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
 ![Chrome Extension](https://img.shields.io/badge/Platform-Chrome%20Extension-blue)
-![License](https://img.shields.io/badge/License-MIT-red)
 
 Uma extensão leve e didática projetada para explorar o poder da **Chrome Extensions API (Manifest V3)**. O projeto foca em demonstrar como interagir programaticamente com o DOM e elementos de mídia em aplicações web complexas.
 
